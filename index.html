@@ -5,262 +5,187 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<title>Horarios de cursada</title>
 	<link rel="icon" type="image/x-icon" href="icono_web.ico">
-  	<link rel="stylesheet" href="horarios.css">
-	 <link rel="stylesheet" href="calendario.css">
-	 <link rel="stylesheet" href="semana.css">
-	 <link rel="stylesheet" href="webs.css">
-	 <link rel="stylesheet" href="horaSema.css">
+  	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Source+Sans+3:ital,wght@0,200..900;1,200..900&display=swap" rel="stylesheet">
+	<link rel="stylesheet" href="barra_superior.css">
+	<link rel="stylesheet" href="titulos_subtitulos.css">
+	<link rel="stylesheet" href="asignaturas.css">
+	<link rel="stylesheet" href="horarios_semana.css">
 </head>
 <body>
-	<div class="ventana">
-		<section>
-			<div class="titulo-pagina">
-				<h1>Carrera: Licenciatura en Sistemas</h1>
-				<h2>Segundo cuatrimestre</h2>
-			</div>
-			<div class="materias">
-				<div >
-					<ul>Programacion II *</ul> 
-					<ul>Estructura de datos</ul>
-					<ul>Organizacion de Computadoras</ul>
-					<ul>Laboratorio de S.O (APU)</ul>
+	<header>
+		<nav class="barra_superior">
+			<a href="https://virtual.unju.edu.ar/">Campus</a>
+			<a href="https://alumnos.unju.edu.ar/unju/">SIU</a>
+			<a href="https://gimnasio.unju.edu.ar/web/">Gym</a>
+			<a href="https://www.fi.unju.edu.ar/">Web</a>
+		</nav>
+	</header>
+
+	<main>
+		<section class="titulos_atajos">
+			<h1>Lic. Sistemas & Ing. Informatica</h1>
+			<h2>Primer Cuatrimestre</h2>
+
+
+			<a href="#modal">Parciales</a>
+
+			<dialog id="modal" class="modal">
+				<div class="subtitulo">
+					<div class="line" style="width: 400px"></div>
+					<h2>Parciales</h2>
+					<div class="line" style="width: 400px"></div>	
 				</div>
-				<div>
-					<ul><a href="https://virtual.unju.edu.ar/enrol/index.php?id=1653">Aula virtual</a></ul>
-					<ul><a href="https://virtual.unju.edu.ar/course/view.php?id=2496">Aula virtual</a></ul>
-					<ul><a href="https://virtual.unju.edu.ar/course/view.php?id=2949">Aula virtual</a></ul>
-					<ul><a href="https://virtual.unju.edu.ar/course/view.php?id=2515">Aula virtual</a></ul>
+				<p>En este momento no hay parciales</p>
+				<a href="#" class="close">Cerrar</a>
+			</dialog>
+		</section>
+
+		<div class="subtitulo">
+			<div class="line" style="width: 475px"></div>
+			<h2>Asignaturas</h2>
+			<div class="line" style="width: 475px"></div>	
+		</div>
+
+		<section class="asignaturas">
+
+			<div class="info">
+				<h3>Algebra</h3>
+				<p>Clase de teoria<br>
+				Clase de practica<br></p>
+				<div class="links">
+					<a href="">Aula Virtual</a>
+					<a href="">Zoom</a>					
 				</div>
-			</div>
-			<div class="dias-habiles">
-			    <div class="dia">
-			      <div class="nombreDia">Lunes</div>
-			      <div class="cuadro"></div>
-			      <div class="cuadro">T/OC</div>
-			      <div class="cuadro"></div>
-			      <div class="cuadro"></div>
-			      <div class="cuadro">T/ED</div>
-			    </div>
-			
-			    <div class="dia">
-			      <div class="nombreDia">Martes</div>
-			      <div class="cuadro">T/Pr</div>
-			      <div class="cuadro"></div>
-			      <div class="cuadro"></div>
-			      <div class="cuadro">T/LSO</div>
-			      <div class="cuadro"></div>
-			    </div>
-			
-			    <div class="dia">
-			      <div class="nombreDia">Miércoles</div>
-			      <div class="cuadro"></div>
-			      <div class="cuadro">P/LSO</div>
-			      <div class="cuadro"></div>
-			      <div class="cuadro"></div>
-			      <div class="cuadro"></div>
-			    </div>
-			
-			    <div class="dia">
-			      <div class="nombreDia">Jueves</div>
-			      <div class="cuadro">P/Pr</div>
-			      <div class="cuadro"></div>
-			      <div class="cuadro">P/OC</div>
-			      <div class="cuadro"></div>
-			      <div class="cuadro"></div>
-			    </div>
-			
-			    <div class="dia">
-			      <div class="nombreDia">Viernes</div>
-			      <div class="cuadro"></div>
-			      <div class="cuadro"></div>
-			      <div class="cuadro"></div>
-			      <div class="cuadro">P/ED</div>
-			      <div class="cuadro"></div>
-			    </div>
-			
-			    <div class="dia">
-			      <div class="nombreDia">Sábado</div>
-			      <div class="cuadro"></div>
-			      <div class="cuadro"></div>
-			      <div class="cuadro"></div>
-			      <div class="cuadro"></div>
-			      <div class="cuadro"></div>
-			    </div>
 			</div>
 
-			<script>
-				  let cuadros = document.querySelectorAll('.cuadro');
-				  cuadros.forEach(cuadro => {
-				    if (cuadro.innerHTML.includes('/')) {
-				      cuadro.style.backgroundColor = "#738091";
-				    }
-				  });
-			</script>
-			<div class="alfa">
-    			<h2 style="color:#fff; padding: 7px 0; font-weight: bold; font-size: 20px;">Grilla de Horarios Semanal</h2>
-    			<div style="font-size: 18px; position: relative;">
-	    			<div class="rejas" style="position:relative; z-index: 2;">  
-				      <div class="horas1">
-				        <div class="header1" style="background-color : #212424;">Lu</div>
-				        <div class="header1">08</div>
-				        <div class="header1">09</div>
-				        <div class="header1">10</div>
-				        <div class="header1">11</div>
-				        <div class="header1">12</div>
-				        <div class="header1">13</div>
-				        <div class="header1">14</div>
-				        <div class="header1">15</div>
-				        <div class="header1">16</div>
-				        <div class="header1">17</div>
-				        <div class="header1">18</div>
-				        <div class="header1">19</div>
-				        <div class="header1">20</div>
-				        <div class="header1">21</div>
-				        <div class="header1">22</div>
-				      </div>
-				      <div class="horas1">
-				        <div class="header1"style="background-color : #212424;">Ma</div>
-				        <div class="header1">08</div>
-				        <div class="header1">09</div>
-				        <div class="header1">10</div>
-				        <div class="header1">11</div>
-				        <div class="header1">12</div>
-				        <div class="header1">13</div>
-				        <div class="header1">14</div>
-				        <div class="header1">15</div>
-				        <div class="header1">16</div>
-				        <div class="header1">17</div>
-				        <div class="header1">18</div>
-				        <div class="header1">19</div>
-				        <div class="header1">20</div>
-				        <div class="header1">21</div>
-				        <div class="header1">22</div>
-				      </div>
-				      <div class="horas1">
-				        <div class="header1"style="background-color : #212424;">Mi</div>
-				        <div class="header1">08</div>
-				        <div class="header1">09</div>
-				        <div class="header1">10</div>
-				        <div class="header1">11</div>
-				        <div class="header1">12</div>
-				        <div class="header1">13</div>
-				        <div class="header1">14</div>
-				        <div class="header1">15</div>
-				        <div class="header1">16</div>
-				        <div class="header1">17</div>
-				        <div class="header1">18</div>
-				        <div class="header1">19</div>
-				        <div class="header1">20</div>
-				        <div class="header1">21</div>
-				        <div class="header1">22</div>
-				      </div>
-				      <div class="horas1">
-				        <div class="header1"style="background-color : #212424;">Ju</div>
-				        <div class="header1">08</div>
-				        <div class="header1">09</div>
-				        <div class="header1">10</div>
-				        <div class="header1">11</div>
-				        <div class="header1">12</div>
-				        <div class="header1">13</div>
-				        <div class="header1">14</div>
-				        <div class="header1">15</div>
-				        <div class="header1">16</div>
-				        <div class="header1">17</div>
-				        <div class="header1">18</div>
-				        <div class="header1">19</div>
-				        <div class="header1">20</div>
-				        <div class="header1">21</div>
-				        <div class="header1">22</div>
-				      </div>
-				      <div class="horas1">
-				        <div class="header1"style="background-color : #212424;">Vi</div>
-				        <div class="header1">08</div>
-				        <div class="header1">09</div>
-				        <div class="header1">10</div>
-				        <div class="header1">11</div>
-				        <div class="header1">12</div>
-				        <div class="header1">13</div>
-				        <div class="header1">14</div>
-				        <div class="header1">15</div>
-				        <div class="header1">16</div>
-				        <div class="header1">17</div>
-				        <div class="header1">18</div>
-				        <div class="header1">19</div>
-				        <div class="header1">20</div>
-				        <div class="header1">21</div>
-				        <div class="header1">22</div>
-				      </div>
-				    </div>
-				    <div class="celdas" style="z-index: 1;">
-				       <div class="grid-container-lun"></div>
-				       <div class="grid-container-lun-aux"></div> 
-				       <div class="grid-container-mar"></div> 
-				       <div class="grid-container-mar-aux"></div> 
-				       <div class="grid-container-mie"></div>
-				       <div class="grid-container-jue"></div> 
-				       <div class="grid-container-jue-aux"></div> 
-				       <div class="grid-container-vie"></div>
-				    </div>
+			<div class="info">
+				<h3>Estructura de datos</h3>
+				<p>Clase de teoria<br>
+				Clase de practica<br></p>
+				<div class="links">
+					<a href="">Aula Virtual</a>
+					<a href="">Zoom</a>					
 				</div>
 			</div>
+
+			<div class="info">
+				<h3>Organizacion de computadoras</h3>
+				<p>Clase de teoria<br>
+				Clase de practica<br></p>
+				<div class="links">
+					<a href="">Aula Virtual</a>
+					<a href="">Zoom</a>					
+				</div>
+			</div>
+
 		</section>
+
+		<div class="subtitulo">
+			<div class="line" style="width: 500px"></div>
+			<h2>Horarios</h2>
+			<div class="line" style="width: 500px"></div>	
+		</div>
 		
-		<section>
-			<div class="horario">
-				<div class="asignatura">
-					<h3>Programacion II</h3>
-					<ul>Martes 09:00 a 11:00. Aula 30</ul>
-					<ul>Jueves 09:00 a 11:00. Aula 30</ul>
+		<section class="horarios">
+			<span><b style="color: #6F51D0;">•</b>Alg</span>
+			<span><b style="color: #D0517C;">•</b>EsD</span>
+			<span><b style="color: #8AD051;">•</b>OrC</span>
+			<div class="semana">
+				<div class="lunes">
+					<div class="dia">Lu</div>
+					<div>08</div>
+					<div>09</div>
+					<div>10</div>
+					<div>11</div>
+					<div class="a1">12</div>
+					<div class="a1">13</div>
+					<div class="a1">14</div>
+					<div>15</div>
+					<div>16</div>
+					<div>17</div>
+					<div class="a2">18</div>
+					<div class="a2">19</div>
+					<div class="a2">20</div>
+					<div class="a2">21</div>
+					<div class="a2">22</div>
 				</div>
-				<div class="asignatura">
-					<h3>Estructura de datos (C4)</h3>
-					<ul>Teorico: Lunes 19:00 a 22:00. Aula <a href="https://bit.ly/AULA-12" target="_blank">Zoom</a></ul>
-					<ul>Practico: Viernes 17:00 a 20:00. Aula <a href="https://bit.ly/AULA-18" target="_blank">Zoom</a></ul>
+				<div class="martes">
+					<div class="dia">Ma</div>
+					<div>08</div>
+					<div>09</div>
+					<div class="a3">10</div>
+					<div class="a3">11</div>
+					<div class="a3">12</div>
+					<div class="a3">13</div>
+					<div class="a3">14</div>
+					<div class="a3">15</div>
+					<div>16</div>
+					<div>17</div>
+					<div>18</div>
+					<div>19</div>
+					<div>20</div>
+					<div>21</div>
+					<div>22</div>
 				</div>
-				<div class="asignatura">
-					<h3>Organizacion de Computadoras (C1)</h3>
-					<ul>Teorico: Lunes 13:00 a 16:00. Aula <a href="https://bit.ly/SALON-6" target="_blank">Zoom</a></ul>
-					<ul>Practico: Jueves 15:30 a 18:30. Aula <a href="https://bit.ly/SALON-6" target="_blank">Zoom</a></ul>
+				<div class="miercoles">
+					<div class="dia">Mi</div>
+					<div>08</div>
+					<div>09</div>
+					<div>10</div>
+					<div>11</div>
+					<div>12</div>
+					<div>13</div>
+					<div>14</div>
+					<div>15</div>
+					<div>16</div>
+					<div>17</div>
+					<div>18</div>
+					<div>19</div>
+					<div>20</div>
+					<div>21</div>
+					<div>22</div>
 				</div>
-				<div class="asignatura">
-					<h3>Laboratorio de Sistemas Operativos (C2)</h3>
-					<ul>Teorico: Martes 18:30 a 20:30. Aula <a href="https://bit.ly/SALON-6" target="_blank">Zoom</a></ul>
-					<ul>Practico: Miercoles 11:00 a 14:00. Aula <a href="https://bit.ly/LABORATORIO-4" target="_blank">Zoom</a></ul>
+				<div class="jueves">
+					<div class="dia">Ju</div>
+					<div>08</div>
+					<div>09</div>
+					<div>10</div>
+					<div>11</div>
+					<div>12</div>
+					<div>13</div>
+					<div>14</div>
+					<div>15</div>
+					<div>16</div>
+					<div>17</div>
+					<div>18</div>
+					<div>19</div>
+					<div>20</div>
+					<div>21</div>
+					<div>22</div>
 				</div>
+				<div class="viernes">
+					<div class="dia">Vi</div>
+					<div>08</div>
+					<div>09</div>
+					<div>10</div>
+					<div>11</div>
+					<div>12</div>
+					<div>13</div>
+					<div>14</div>
+					<div>15</div>
+					<div>16</div>
+					<div>17</div>
+					<div>18</div>
+					<div>19</div>
+					<div>20</div>
+					<div>21</div>
+						<div>22</div>
+					</div>
 			</div>
 		</section>
-
-		<section>
-			<div class="calendario">
-	   			<div class="headers" id="monthYear"></div>
-	   			<div class="grid" id="calendarGrid"></div>
-	 		</div>
-	 		<script src="calendario.js"></script>
-
-	 		<div style="display: flex; align-items: flex-start; gap: 8px;">
-	 			<div class="sitio-1">
-					<ul>Sitios webs</ul>
-					<div class="sitio-1_webs">
-						<a href="https://virtual.unju.edu.ar/" target="_blank"><li>Unju Virtual</li></a>
-						<a href="https://alumnos.unju.edu.ar/unju/" target="_blank"><li>SIU Guarani</li></a>
-						<a href="https://gimnasio.unju.edu.ar/web/" target="_blank"><li>Unju GYM</li></a>
-						<a href="https://www.fi.unju.edu.ar/" target="_blank"><li>Facultad de Ing.</li></a>
-		 			</div>
-		 		</div>
-		 		<div class="sitio-2">
-					<ul>Dist. Horaria</ul>
-					<div class="sitio-2_webs">
-						<li class="web">1h GYM</li>
-						<li class="web">3h Estudio</li>
-						<li class="web">6h Estudio</li>
-						<li class="web">8h Repaso/Ocio</li>
-		 			</div>
-		 		</div>
-	 		</div>
-		</section>
-	</div>
-	<script src="distHoraria.js"></script>
-
+	</main>
 </body>
 </html>
 

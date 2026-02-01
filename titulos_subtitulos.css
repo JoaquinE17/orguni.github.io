@@ -1,0 +1,84 @@
+.titulos_atajos {
+  text-align: center;
+  padding: 40px 50px 50px 50px;
+  h1 {
+    font-weight: normal;
+    font-size: 80px;
+  }
+  h2 {
+    font-weight: normal;
+    font-size: 45px;
+    margin-bottom: 40px;
+  }
+  a {
+    font-size: 25px;
+    padding: 5px 20px;
+    border-radius: 25px;
+    background-color: #d051b2;
+    color: #1d1d1d;
+  }
+
+  .modal {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    width: 400px;
+    height: 350px;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    .subtitulo h2{
+      margin: auto 0px;
+    }
+    opacity: 0;
+    pointer-events: none;
+    transition: opacity 0.3s;
+    transform: translate(-50%, -50%);
+    z-index: 10;
+  }
+
+  .modal:target {
+    opacity: 1;
+    pointer-events: auto;
+  }
+  
+  .close {
+    position: absolute;
+    bottom: 10px;
+    right: 10px;
+    color: #1d1d1d;
+    width: 50px;
+    font-size: 20px;
+  }   
+}
+@media only screen and (max-width: 751px) {
+  .titulos_atajos h1 {
+    font-size: 50px;
+  }
+  .titulos_atajos h2 {
+    font-size: 25px;
+  }
+  .titulos_atajos a {
+    font-size: 21px;
+  }
+}
+
+.subtitulo {
+  display: flex;
+  justify-content: center;
+  .line {
+    height: .5px;
+    background-color: #bdbdbd;
+    margin: auto 20px;
+  }
+  h2 {
+    font-weight: normal;
+    font-size: 35px;
+  }
+}
+
+@media only screen and (max-width: 751px) {
+  .subtitulo h2 {
+    font-size: 25px;
+  }
+}

@@ -1,0 +1,66 @@
+.horarios {
+  text-align: center;
+  padding: 15px 0px;
+  span {
+    font-size: 25px;
+    margin: 0px 20px;
+    b {
+      font-size: 30px;
+      margin-right: 5px;
+    }
+  }
+}
+@media only screen and (max-width: 751px) {
+  .horarios{
+    padding: 5px 0;
+  }
+  .horarios span{
+    font-size: 19px;
+  }
+}
+
+.semana{
+  margin: 20px auto 0px auto;
+  max-width: 1200px;
+  .lunes,.martes,.miercoles,.jueves,.viernes {
+    display: grid;
+    grid-template-columns: repeat(16, 1fr);
+    column-gap: 5px;
+    margin-bottom: 10px;
+    font-size: 20px;
+  }
+  .dia{
+    background-color: #D16252;
+    color: #1d1d1d;
+    border-radius: 5px;
+  }
+  /*Asignatura 1: [Algebra]*/
+  .a1 {
+    background-color: #6F51D0;
+    color: #1d1d1d;
+    border-radius: 5px;
+  }
+  /*Asignatura 2: [EsD]*/
+  .a2 {
+    background-color: #D0517C;
+    color: #1d1d1d;
+    border-radius: 5px;
+  }
+  /*Asignatura 3: [OrC]*/
+  .a3 {
+    background-color: #8AD051;
+    color: #1d1d1d;
+    border-radius: 5px;
+  }
+}
+@media only screen and (max-width: 751px) {
+  .semana {
+    margin: 5px auto 0px auto;
+    min-width: 400px;
+    padding: 10px;
+    .lunes,.martes,.miercoles,.jueves,.viernes {
+      font-size: 15px;
+    }
+  }
+}
+

@@ -1,0 +1,39 @@
+.asignaturas {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  padding: 20px 0px 30px 0px;
+  .info {
+    margin: 10px;
+    border-radius: 5px;
+    border: 2px solid #D0AF51;
+    background-color: #1d1d1d;
+    color: #1d1d1d;
+    width: 350px;
+    height: 175px;
+    padding: 5px;
+    position: relative;
+    h3 {
+      font-size: 25px;
+      color: #bdbdbd;
+    }
+    p {
+      font-size: 20px;
+      color: #bdbdbd;
+    }
+    .links {
+      position: absolute;
+      bottom: 0px;
+      right: 0px;
+      margin: 15px 10px;
+      a {
+        font-size: 20px;
+        color: #1d1d1d;
+        background-color: #D0AF51;
+        margin: 3px;
+        padding: 2px 10px;
+        border-radius: 20px;
+      }
+    }
+  }
+}

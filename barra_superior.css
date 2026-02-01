@@ -1,0 +1,23 @@
+*{
+  padding: 0;
+  margin: 0;
+  color: #bdbdbd;
+  background-color: #1d1d1d;
+  font-family: "Source Sans 3", sans-serif;
+}
+
+header {
+  padding-top: 10px;
+  .barra_superior {
+    padding: 5px;
+    text-align: center;
+    font-size: 20px;
+    a {
+      padding: 5px 20px;
+      margin: 5px;
+      background-color: #51b2d0;
+      color: #1d1d1d;
+      border-radius: 25px;
+    }
+  }
+}
