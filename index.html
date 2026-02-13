@@ -16,10 +16,10 @@
 <body>
 	<header>
 		<nav class="barra_superior">
-			<a href="https://virtual.unju.edu.ar/">Campus</a>
-			<a href="https://alumnos.unju.edu.ar/unju/">SIU</a>
-			<a href="https://gimnasio.unju.edu.ar/web/">Gym</a>
-			<a href="https://www.fi.unju.edu.ar/">Web</a>
+			<a href="https://virtual.unju.edu.ar/" target="_blank">Campus</a>
+			<a href="https://alumnos.unju.edu.ar/unju/" target="_blank">SIU</a>
+			<a href="https://gimnasio.unju.edu.ar/web/" target="_blank">Gym</a>
+			<a href="https://www.fi.unju.edu.ar/" target="_blank">Web</a>
 		</nav>
 	</header>
 
@@ -28,18 +28,55 @@
 			<h1>Lic. Sistemas & Ing. Informatica</h1>
 			<h2>Primer Cuatrimestre</h2>
 
-
-			<a href="#modal">Parciales</a>
-
-			<dialog id="modal" class="modal">
+			<a href="#modal_parciales">Parciales</a>
+			<dialog id="modal_parciales" class="modal_parciales">
 				<div class="subtitulo">
 					<div class="line" style="width: 400px"></div>
 					<h2>Parciales</h2>
 					<div class="line" style="width: 400px"></div>	
 				</div>
-				<p>En este momento no hay parciales</p>
+				<div class="lista_parciales">
+					<!--<p>En este momento no hay parciales</p>-->
+					<div class="parcial">
+						<span>Alg</span>
+						<div>
+							<h3>Algebra</h3>
+							<p>Parcial 1: DD/MM | Recup.: DD/MM</p>
+							<p>Parcial 2: DD/MM | Recup.: DD/MM</p>						
+						</div>
+					</div>
+					<div class="parcial">
+						<span>EsD</span>
+						<div>
+							<h3>Estructura de datos</h3>
+							<p>Parcial 1: DD/MM | Recup.: DD/MM</p>
+							<p>Parcial 2: DD/MM | Recup.: DD/MM</p>							
+						</div>
+					</div>
+					<div class="parcial">
+						<span>OrC</span>
+						<div>
+							<h3>Organizacion de computadoras</h3>
+							<p>Parcial 1: DD/MM | Recup.: DD/MM</p>
+							<p>Parcial 2: DD/MM | Recup.: DD/MM</p>						
+						</div>
+					</div>
+				</div>
 				<a href="#" class="close">Cerrar</a>
 			</dialog>
+
+			<!-- Agregar una modal de dicada a las aulas fisicas-->
+			<a href="#modal_aulas">Aulas FI</a>
+			<dialog id="modal_aulas" class="modal_aulas">
+				<div class="subtitulo">
+					<div class="line" style="width: 100px"></div>
+					<h2>Aulas FI</h2>
+					<div class="line" style="width: 100px"></div>	
+				</div>
+				<p>En este momento no esta disponible</p>
+				<a href="#" class="close">Cerrar</a>
+			</dialog>
+
 		</section>
 
 		<div class="subtitulo">
@@ -55,8 +92,8 @@
 				<p>Clase de teoria<br>
 				Clase de practica<br></p>
 				<div class="links">
-					<a href="">Aula Virtual</a>
-					<a href="">Zoom</a>					
+					<a href="" target="_blank">Aula Virtual</a>
+					<a href="" target="_blank">Zoom</a>					
 				</div>
 			</div>
 
@@ -65,8 +102,8 @@
 				<p>Clase de teoria<br>
 				Clase de practica<br></p>
 				<div class="links">
-					<a href="">Aula Virtual</a>
-					<a href="">Zoom</a>					
+					<a href="" target="_blank">Aula Virtual</a>
+					<a href="" target="_blank">Zoom</a>					
 				</div>
 			</div>
 
@@ -75,8 +112,8 @@
 				<p>Clase de teoria<br>
 				Clase de practica<br></p>
 				<div class="links">
-					<a href="">Aula Virtual</a>
-					<a href="">Zoom</a>					
+					<a href="" target="_blank">Aula Virtual</a>
+					<a href="" target="_blank">Zoom</a>					
 				</div>
 			</div>
 

@@ -16,28 +16,58 @@
     border-radius: 25px;
     background-color: #d051b2;
     color: #1d1d1d;
+    margin: 0 5px;
   }
 
-  .modal {
+  .modal_parciales {
     position: fixed;
     top: 50%;
     left: 50%;
     width: 400px;
-    height: 350px;
-    border-radius: 10px;
+    height: 450px;
+    border: 3px solid #bdbdbd;
+    border-radius: 5px;
     display: flex;
     flex-direction: column;
     .subtitulo h2{
-      margin: auto 0px;
+      margin: 10px 0px;
     }
     opacity: 0;
     pointer-events: none;
     transition: opacity 0.3s;
     transform: translate(-50%, -50%);
     z-index: 10;
+    .lista_parciales {
+      position: relative;
+      margin: 0 10px;
+      height: 340px;
+      overflow: auto;
+      display: flex;
+      flex-direction: column;
+      gap: 7px;
+      .parcial {
+        display: flex;
+        flex-direction: row;
+        border: 3px solid #d051b2;
+        border-radius: 5px;
+        span {
+          font-size: 38px;
+          padding: 15px;
+          background-color: #d051b2;
+          color: #1d1d1d;
+        }
+        div {
+          text-align: left;
+          padding: 5px 10px;
+        }
+      }
+    }
+    .lista_parciales::-webkit-scrollbar {
+      display: none;/* Chrome, Safari y Edge (ocultar barra de desplazamiento)*/
+    }
   }
 
-  .modal:target {
+  .modal_parciales:target {
     opacity: 1;
     pointer-events: auto;
   }
@@ -51,6 +81,41 @@
     font-size: 20px;
   }   
 }
+
+.modal_aulas {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    width: 400px;
+    height: 450px;
+    border: 3px solid #bdbdbd;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    .subtitulo h2{
+      margin: 10px 0px;
+    }
+    opacity: 0;
+    pointer-events: none;
+    transition: opacity 0.3s;
+    transform: translate(-50%, -50%);
+    z-index: 10;
+  }
+
+  .modal_aulas:target {
+    opacity: 1;
+    pointer-events: auto;
+  }
+  
+  .close {
+    position: absolute;
+    bottom: 10px;
+    right: 10px;
+    color: #1d1d1d;
+    width: 50px;
+    font-size: 20px;
+  }   
+
 @media only screen and (max-width: 751px) {
   .titulos_atajos h1 {
     font-size: 50px;
