@@ -20,4 +20,4 @@ El objetivo principal es mejorar la organización personal durante el cursado un
 
 El proyecto se encuentra disponible en el siguiente enlace:
 
-🔗 https://joaquine17.github.io/proyecto_4.github.io/
+🔗 https://joaquine17.github.io/orguni.github.io/
