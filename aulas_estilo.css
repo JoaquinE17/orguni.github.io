@@ -12,7 +12,7 @@
     line-height: 20px;
     text-align: center;
 	div{
-		background-color: #C94EAC;
+		background-color: #d051b2;
 		border-radius: 10px;
 		color: #1d1d1d;
 	}
@@ -26,7 +26,7 @@
     line-height: 25px;
     text-align: center;
 	div{
-		background-color: #853472;
+		background-color: #A7418F;
 		border-radius: 10px;
 	}
 }
@@ -39,7 +39,7 @@
     line-height: 30px;
     text-align: center;
 	div{
-		background-color: #A7418F;
+		background-color: #853472;
 		border-radius: 10px;
 	}
 }
@@ -89,7 +89,7 @@
     text-align: center;
 	margin-bottom: 5px;
 	div{
-		background-color: #A7418F;
+		background-color: #853472;
 		border-radius: 10px;
 	}
 }
@@ -102,7 +102,7 @@
     line-height: 25px;
     text-align: center;
 	div{
-		background-color: #853472;
+		background-color: #A7418F;
 		border-radius: 10px;
 	}
 }
@@ -141,7 +141,7 @@
 			display: grid;
 			gap: 5px;
 			div{
-				background-color: #A7418F;
+				background-color: #853472;
 				border-radius: 10px;
 			}
 			height: 30px;
