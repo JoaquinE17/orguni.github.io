@@ -12,6 +12,7 @@
 	<link rel="stylesheet" href="titulos_subtitulos.css">
 	<link rel="stylesheet" href="asignaturas.css">
 	<link rel="stylesheet" href="horarios_semana.css">
+	<link rel="stylesheet" href="aulas_estilo.css">
 </head>
 <body>
 	<header>
@@ -27,7 +28,7 @@
 		<section class="titulos_atajos">
 			<h1>Lic. Sistemas & Ing. Informatica</h1>
 			<h2>Primer Cuatrimestre</h2>
-
+			<!-- Modal dedicada a mostrar los parciales -->
 			<a href="#modal_parciales">Parciales</a>
 			<dialog id="modal_parciales" class="modal_parciales">
 				<div class="subtitulo">
@@ -65,7 +66,7 @@
 				<a href="#" class="close">Cerrar</a>
 			</dialog>
 
-			<!-- Agregar una modal de dicada a las aulas fisicas-->
+			<!-- Modal dedicada a las aulas fisicas -->
 			<a href="#modal_aulas">Aulas FI</a>
 			<dialog id="modal_aulas" class="modal_aulas">
 				<div class="subtitulo">
@@ -73,7 +74,76 @@
 					<h2>Aulas FI</h2>
 					<div class="line" style="width: 100px"></div>	
 				</div>
-				<p>En este momento no esta disponible</p>
+				<div class="contenedor_padre">
+					<div class="aux">
+						<div class="contenedor">
+							<div class="primerpiso">
+								<div class="plantapiloto_1">
+									<div class="a11">A11</div>
+									<div class="a12">A12</div>
+									<div class="s2">s2/s6</div>
+									<div class="s5">s5/s20</div>
+									<div class="computo">s/Comp</div>
+								</div>
+							</div>
+							<div class="plantabaja">
+								<div class="plantapiloto">Planta Piloto</div>	
+							</div>
+						</div>
+					</div>
+					<div class="contenedor1">
+						<div class="tercerpiso1">
+							<div class="biblioteca_3">
+								<div class="a24">A24</div>
+								<div class="a23">A23</div>
+								<div class="a22">A22</div>
+								<div class="a21">A21</div>
+								<div class="a20">A20</div>
+							</div>
+						</div>
+						<div class="segundopiso1">
+							<div class="biblioteca_2">
+								<div class="a19">A19</div>
+								<div class="a18">A18</div>
+								<div class="a17">A17</div>
+							</div>
+						</div>
+
+						<div class="primerpiso1">
+							<div class="biblioteca_1">
+								<div class="a16">A16</div>
+								<div class="a14">A14</div>
+								<div class="a15">A15</div>
+							</div>
+						</div>
+						<div class="plantabaja0">
+							<div class="biblioteca">Biblioteca</div>
+							<div class="anfi">Anfiteatro</div>
+							<div class="gabi_tuto">
+								<div class="gabinete">Gabinete</div>
+								<div class="tutoria">Tutoria</div>
+							</div>
+						</div>
+
+						<div class="primerpiso-1">
+							<div class="gabituto_1">
+								<div class="a31">A31</div>
+								<div class="a30">A30</div>
+								<div class="gabinete">Gabinete</div>			
+							</div>
+						</div>
+						<div class="segundopiso-1">
+							<div class="gabituto_2">
+								<div class="a29">A29</div>
+								<div class="a28">A28</div>
+								<div class="a27">A27</div>
+								<div class="a26">A26</div>
+								<div class="a25">A25</div>
+							</div>			
+						</div>
+					</div>
+				</div>
+				<a class="link_aulasfi" href="https://www.fi.unju.edu.ar/secretarias/sacad/aulas-fiunju.html?highlight=WyJhdWxhcyJd" target="_blank">Consultar disponibilidad de aulas</a>
 				<a href="#" class="close">Cerrar</a>
 			</dialog>
 

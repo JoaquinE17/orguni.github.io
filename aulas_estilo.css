@@ -1,0 +1,154 @@
+.contenedor1{
+	width: 275px; /*350*/
+	height: 290px;/*370*/
+}
+
+.tercerpiso1 .biblioteca_3{
+	display: grid;
+	grid-template-columns: auto auto auto auto auto;
+	gap: 5px;
+	margin-bottom: 5px;
+	height: 20px;
+    line-height: 20px;
+    text-align: center;
+	div{
+		background-color: #C94EAC;
+		border-radius: 10px;
+		color: #1d1d1d;
+	}
+}
+.segundopiso1 .biblioteca_2{
+	display: grid;
+	grid-template-columns: auto auto auto;
+	gap: 5px;
+	margin-bottom: 5px;
+	height: 25px;
+    line-height: 25px;
+    text-align: center;
+	div{
+		background-color: #853472;
+		border-radius: 10px;
+	}
+}
+.primerpiso1 .biblioteca_1{
+	display: grid;
+	grid-template-columns: auto auto auto;
+	gap: 5px;
+	margin-bottom: 5px;	
+	height: 30px;
+    line-height: 30px;
+    text-align: center;
+	div{
+		background-color: #A7418F;
+		border-radius: 10px;
+	}
+}
+
+.plantabaja0 .biblioteca {
+	display: grid;
+	gap: 5px;
+	margin-bottom: 5px;
+	background-color: #632755;
+	border-radius: 10px;
+	height: 35px;
+    line-height: 35px;
+    text-align: center;
+}
+.plantabaja0 .anfi{
+	display: grid;
+	gap: 5px;
+	background-color: #411937;
+	border-radius: 10px;
+	height: 50px;
+    line-height: 50px;
+    text-align: center;
+	width: 260px;
+	margin: 0 auto;
+	margin-bottom: 5px;
+}
+.plantabaja0 .gabi_tuto{
+	display: grid;
+	grid-template-columns: auto 100px;
+	gap: 5px;
+	height: 35px;
+    line-height: 35px;
+    text-align: center;
+	margin-bottom: 5px;
+	div{
+		background-color: #632755;
+		border-radius: 10px;
+	}
+}
+
+.primerpiso-1 .gabituto_1{
+	display: grid;
+	grid-template-columns: auto auto 150px;
+	gap: 5px;
+	height: 30px;
+    line-height: 30px;
+    text-align: center;
+	margin-bottom: 5px;
+	div{
+		background-color: #A7418F;
+		border-radius: 10px;
+	}
+}
+.segundopiso-1 .gabituto_2{
+	display: grid;
+	grid-template-columns: auto auto auto auto auto;
+	gap: 5px;
+	margin-bottom: 5px;
+	height: 25px;
+    line-height: 25px;
+    text-align: center;
+	div{
+		background-color: #853472;
+		border-radius: 10px;
+	}
+}
+
+.primerpiso .plantapiloto_1{
+	display: grid;
+	grid-template-columns: auto auto auto auto auto;
+}
+.contenedor_padre{
+	width: 350px;
+	display: flex;
+	margin: 0px auto;
+}
+
+.aux {
+	height: 290px;
+	width: 75px;
+	position: relative;
+	.contenedor{
+		position: absolute;
+		top: 232px;
+		left: 35px;
+		text-align: center;
+		justify-items: center;
+		transform-origin: left;
+		transform: rotate(270deg);
+		.plantabaja .plantapiloto{
+			background-color: #632755;
+			border-radius: 10px;
+			height: 35px;
+		    line-height: 35px;
+		    text-align: center;
+			width: 130px;
+		}
+		.primerpiso .plantapiloto_1{
+			display: grid;
+			gap: 5px;
+			div{
+				background-color: #A7418F;
+				border-radius: 10px;
+			}
+			height: 30px;
+		    line-height: 30px;
+		    text-align: center;
+			width: 220px;
+			margin-bottom: 5px;
+		}
+	}
+}
