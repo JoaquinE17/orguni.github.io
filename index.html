@@ -26,9 +26,9 @@
 
 	<main>
 		<section class="titulos_atajos">
-			<h1>Lic. Sistemas & Ing. Informatica</h1>
+			<h1>Licenciatura en Sistemas</h1>
 			<h2>Primer Cuatrimestre</h2>
-			<!-- Modal dedicada a mostrar los parciales -->
+			<!-- Modal de Parciales -->
 			<a href="#modal_parciales">Parciales</a>
 			<dialog id="modal_parciales" class="modal_parciales">
 				<div class="subtitulo">
@@ -41,32 +41,32 @@
 					<div class="parcial">
 						<span>Alg</span>
 						<div>
-							<h3>Algebra</h3>
+							<h3>Álgebra Lineal</h3>
 							<p>Parcial 1: DD/MM | Recup.: DD/MM</p>
 							<p>Parcial 2: DD/MM | Recup.: DD/MM</p>						
-						</div>
-					</div>
-					<div class="parcial">
-						<span>EsD</span>
-						<div>
-							<h3>Estructura de datos</h3>
-							<p>Parcial 1: DD/MM | Recup.: DD/MM</p>
-							<p>Parcial 2: DD/MM | Recup.: DD/MM</p>							
 						</div>
 					</div>
 					<div class="parcial">
 						<span>OrC</span>
 						<div>
-							<h3>Organizacion de computadoras</h3>
+							<h3>Organización de Computadoras</h3>
 							<p>Parcial 1: DD/MM | Recup.: DD/MM</p>
 							<p>Parcial 2: DD/MM | Recup.: DD/MM</p>						
+						</div>
+					</div>
+					<div class="parcial">
+						<span>AnM</span>
+						<div>
+							<h3>Análisis Matemático</h3>
+							<p>Parcial 1: DD/MM | Recup.: DD/MM</p>
+							<p>Parcial 2: DD/MM | Recup.: DD/MM</p>							
 						</div>
 					</div>
 				</div>
 				<a href="#" class="close">Cerrar</a>
 			</dialog>
 
-			<!-- Modal dedicada a las aulas fisicas -->
+			<!-- Modal de AulasFI -->
 			<a href="#modal_aulas">Aulas FI</a>
 			<dialog id="modal_aulas" class="modal_aulas">
 				<div class="subtitulo">
@@ -158,15 +158,58 @@
 		<section class="asignaturas">
 
 			<div class="info">
-				<h3>Algebra</h3>
-				<p>Clase de teoria<br>
-				Clase de practica<br></p>
+				<h3>Álgebra Lineal</h3>
+				<p>Clase de teoría: Martes 10 a 13 hs.<br>
+				Clase de práctica: Miércoles 10 a 13 hs.<br>
+				Modalidad: Mixta (<b style="color:#D0AF51">ANFITEATRO</b>)</p>
 				<div class="links">
-					<a href="" target="_blank">Aula Virtual</a>
-					<a href="" target="_blank">Zoom</a>					
+					<a href="https://virtual.unju.edu.ar/course/view.php?id=3224" target="_blank">Aula Virtual</a>
+					<a href="https://bit.ly/ANFITEATRO" target="_blank">Zoom</a>					
 				</div>
 			</div>
 
+			<div class="info">
+				<h3>Organización de Computadoras</h3>
+				<p>Clase de teoría: Lunes 13 a 16 hs.<br>
+				Clase de práctica: Miércoles 16 a 19 hs.<br>
+				Modalidad: Virtual</p>
+				<div class="links">
+					<a href="https://virtual.unju.edu.ar/course/view.php?id=2949" target="_blank">Aula Virtual</a>					<a href="#modal_zoom">Zoom</a>
+					<dialog id="modal_zoom" class="modal_zoom">
+						<div class="subtitulo">
+							<div class="line" style="width: 400px"></div>
+							<h2>Enlaces</h2>
+							<div class="line" style="width: 400px"></div>	
+						</div>
+						<div class="lista_enlaces">
+							<!--<p>En este momento no hay enlaces</p>-->
+							<div class="parcial">
+								<div>
+									<b><a href="https://bit.ly/FI-SALON-6">Clase Teorica</a></b>					
+								</div>
+							</div>
+							<div class="parcial">
+								<div>
+									<b><a href="https://bit.ly/FI-SALON-6">Clase Practica</a></b>					
+								</div>
+							</div>
+						</div>
+						<a href="#" class="close">Cerrar</a>
+					</dialog>					
+				</div>
+			</div>
+
+
+			<div class="info">
+				<h3>Análisis Matemático</h3>
+				<p>Clase de teoría: Viernes 10 a 14 hs.<br>
+				Clase de práctica: Viernes 15 a 18 hs.<br>
+				Modalidad: Presencial (<b style="color:#D0AF51;">AULA 14</b>)</p>
+				<div class="links">
+					<a href="" target="_blank">Aula Virtual</a>				
+				</div>
+			</div>
+			<!--
 			<div class="info">
 				<h3>Estructura de datos</h3>
 				<p>Clase de teoria<br>
@@ -176,17 +219,7 @@
 					<a href="" target="_blank">Zoom</a>					
 				</div>
 			</div>
-
-			<div class="info">
-				<h3>Organizacion de computadoras</h3>
-				<p>Clase de teoria<br>
-				Clase de practica<br></p>
-				<div class="links">
-					<a href="" target="_blank">Aula Virtual</a>
-					<a href="" target="_blank">Zoom</a>					
-				</div>
-			</div>
-
+			-->
 		</section>
 
 		<div class="subtitulo">
@@ -196,39 +229,21 @@
 		</div>
 		
 		<section class="horarios">
-			<span><b style="color: #6F51D0;">•</b>Alg</span>
-			<span><b style="color: #D0517C;">•</b>EsD</span>
-			<span><b style="color: #8AD051;">•</b>OrC</span>
+			<span><b style="color: #6F51D0;">•</b>Alg</span> <!-- a1 -->
+			<span><b style="color: #D0517C;">•</b>OrC</span> <!-- a2 -->
+			<span><b style="color: #8AD051;">•</b>AnM</span> <!-- a3 -->
 			<div class="semana">
 				<div class="lunes">
 					<div class="dia">Lu</div>
 					<div>08</div>
 					<div>09</div>
-					<div>10</div>
-					<div>11</div>
+					<div class="a1">10</div>
+					<div class="a1">11</div>
 					<div class="a1">12</div>
-					<div class="a1">13</div>
-					<div class="a1">14</div>
-					<div>15</div>
-					<div>16</div>
-					<div>17</div>
-					<div class="a2">18</div>
-					<div class="a2">19</div>
-					<div class="a2">20</div>
-					<div class="a2">21</div>
-					<div class="a2">22</div>
-				</div>
-				<div class="martes">
-					<div class="dia">Ma</div>
-					<div>08</div>
-					<div>09</div>
-					<div class="a3">10</div>
-					<div class="a3">11</div>
-					<div class="a3">12</div>
-					<div class="a3">13</div>
-					<div class="a3">14</div>
-					<div class="a3">15</div>
-					<div>16</div>
+					<div class="a2">13</div>
+					<div class="a2">14</div>
+					<div class="a2">15</div>
+					<div class="a2">16</div>
 					<div>17</div>
 					<div>18</div>
 					<div>19</div>
@@ -236,8 +251,8 @@
 					<div>21</div>
 					<div>22</div>
 				</div>
-				<div class="miercoles">
-					<div class="dia">Mi</div>
+				<div class="martes">
+					<div class="dia">Ma</div>
 					<div>08</div>
 					<div>09</div>
 					<div>10</div>
@@ -250,6 +265,24 @@
 					<div>17</div>
 					<div>18</div>
 					<div>19</div>
+					<div>20</div>
+					<div>21</div>
+					<div>22</div>
+				</div>
+				<div class="miercoles">
+					<div class="dia">Mi</div>
+					<div>08</div>
+					<div>09</div>
+					<div class="a1">10</div>
+					<div class="a1">11</div>
+					<div class="a1">12</div>
+					<div class="a1">13</div>
+					<div>14</div>
+					<div>15</div>
+					<div class="a2">16</div>
+					<div class="a2">17</div>
+					<div class="a2">18</div>
+					<div class="a2">19</div>
 					<div>20</div>
 					<div>21</div>
 					<div>22</div>
@@ -276,15 +309,15 @@
 					<div class="dia">Vi</div>
 					<div>08</div>
 					<div>09</div>
-					<div>10</div>
-					<div>11</div>
-					<div>12</div>
-					<div>13</div>
-					<div>14</div>
-					<div>15</div>
-					<div>16</div>
-					<div>17</div>
-					<div>18</div>
+					<div class="a3">10</div>
+					<div class="a3">11</div>
+					<div class="a3">12</div>
+					<div class="a3">13</div>
+					<div class="a3">14</div>
+					<div class="a3">15</div>
+					<div class="a3">16</div>
+					<div class="a3">17</div>
+					<div class="a3">18</div>
 					<div>19</div>
 					<div>20</div>
 					<div>21</div>
