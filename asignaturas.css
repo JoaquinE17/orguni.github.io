@@ -21,6 +21,10 @@
       font-size: 20px;
       color: #bdbdbd;
     }
+    sup {
+      font-size: 12px;
+      font-weight: bold;
+    }
     .links {
       position: absolute;
       bottom: 0px;
