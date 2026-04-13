@@ -31,7 +31,7 @@
   }
 
   .dia{
-    box-shadow: 0 0 0 3px #D16252 inset;
+    box-shadow: 0 0 0 2px #D16252 inset;
     color: #bdbdbd;
     border-radius: 5px;
   }
@@ -69,5 +69,4 @@
       font-size: 15px;
     }
   }
-}
 
