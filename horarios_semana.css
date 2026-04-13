@@ -29,11 +29,18 @@
     margin-bottom: 10px;
     font-size: 20px;
   }
+
   .dia{
+    box-shadow: 0 0 0 3px #D16252 inset;
+    color: #bdbdbd;
+    border-radius: 5px;
+  }
+  .activo {
     background-color: #D16252;
     color: #1d1d1d;
     border-radius: 5px;
   }
+
   /*Asignatura 1: [Algebra]*/
   .a1 {
     background-color: #6F51D0;

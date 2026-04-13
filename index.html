@@ -202,7 +202,7 @@
 			<div class="info">
 				<h3>Análisis Matemático<sup> [C2]</sup></h3>
 				<p>Clase de teoría: Viernes 10:30 a 13:30 hs.<br>
-				Clase de práctica: Viernes 15:30 a 18 hs.<br>
+				Clase de práctica: Viernes 15 a 18 hs.<br>
 				Modalidad: Presencial (<b style="color:#D0AF51;">AULA 14</b>)</p>
 				<div class="links">
 					<a href="https://virtual.unju.edu.ar/course/view.php?id=424" target="_blank">Aula Virtual</a>				
@@ -320,9 +320,37 @@
 					<div>19</div>
 					<div>20</div>
 					<div>21</div>
-						<div>22</div>
-					</div>
+					<div>22</div>
+				</div>
 			</div>
+			<script>
+				document.addEventListener("DOMContentLoaded", function () {
+				  const diasSemana = {
+				    1: "lunes",
+				    2: "martes",
+				    3: "miercoles",
+				    4: "jueves",
+				    5: "viernes"
+				  };
+
+				  const hoy = new Date().getDay();
+
+				  if (!diasSemana[hoy]) return;
+
+				  const claseHoy = diasSemana[hoy];
+				  const listDias = document.querySelectorAll(".semana > div");
+
+				  listDias.forEach(dia => {
+				    const titulo = dia.querySelector(".dia");
+
+				    if (!titulo) return;
+
+				    if (dia.classList.contains(claseHoy)) {
+				      titulo.classList.add("activo");
+				    }
+				  });
+				});
+			</script>
 		</section>
 	</main>
 </body>
