@@ -1,6 +1,7 @@
 .horarios {
   text-align: center;
   padding: 15px 0px;
+  background-color: #272727;
   span {
     font-size: 25px;
     margin: 0px 20px;
@@ -8,6 +9,9 @@
       font-size: 30px;
       margin-right: 5px;
     }
+  }
+  .dia {
+    background-color: transparent;
   }
 }
 @media only screen and (max-width: 751px) {
@@ -28,6 +32,10 @@
     column-gap: 5px;
     margin-bottom: 10px;
     font-size: 20px;
+    background-color: transparent;
+    div{
+      border-radius: 5px;
+    }
   }
 
   .dia{
@@ -69,4 +77,10 @@
       font-size: 15px;
     }
   }
+}
 
+@media only screen and (max-width: 550px) {
+  .horarios .dia{
+      box-shadow: 0 0 0 1px #D16252 inset;
+  }
+}

@@ -9,7 +9,7 @@
     border: 2px solid #D0AF51;
     background-color: #1d1d1d;
     color: #1d1d1d;
-    width: 350px;
+    width: 400px;
     height: 175px;
     padding: 5px;
     position: relative;
@@ -40,7 +40,6 @@
         text-decoration: none;
       }
       a:hover{;
-        color: white;
         text-decoration: underline;
       }
     }
@@ -101,4 +100,12 @@
     width: 50px;
     font-size: 20px;
   } 
+}
+
+@media only screen and (max-width: 700px) {
+  .asignaturas .info {
+    h3,p{
+      font-size: 20px;
+    }
+  }
 }
